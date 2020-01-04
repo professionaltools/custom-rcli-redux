@@ -1,12 +1,10 @@
 import React, {Component, Fragment} from 'react'
-
+import HomeIndex from '../pages/home'
 class Root extends Component {
   render() {
     return (
       <Fragment>
-        <div>
-          Entry
-        </div>
+        <HomeIndex/>
       </Fragment>
     )
   }
