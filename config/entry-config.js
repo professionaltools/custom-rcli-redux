@@ -4,7 +4,7 @@ module.exports = function (argv, isDev) {
   const mode = argv.mode
   const filename = mode === "production" ? "js/[name].[chunkhash].js" : "js/[name].js"
   const chunkFilename = mode === "production" ? "js/[id].[chunkhash].js" : "js/[id].js"
-  let entry = ['react-hot-loader/patch', './src/index.js']
+  let entry = ['react-hot-loader/patch', utils.resolve("src/index.js")]
   if (!isDev) {
     entry = {
       "app": utils.resolve("src/index.js")
